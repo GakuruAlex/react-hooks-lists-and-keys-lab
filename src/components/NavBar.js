@@ -5,11 +5,10 @@ function NavBar() {
 
   const userLinks= links.map((link)=>{
 
-    return <a href={link}>{link}</a>
+    return <a key={link} href={'#'+link} >{link}</a>
   }) ;
 
-  return <nav>{/* display an <a> tag for each link here */
-  userLinks}
+  return <nav>{/* display an <a> tag for each link here */ userLinks}
   </nav>;
 }
 
